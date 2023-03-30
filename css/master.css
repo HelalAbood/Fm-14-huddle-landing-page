@@ -86,6 +86,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--background-img);
+    padding-bottom: 40px;
 }
 @media (max-width: 767px) {
     main { 
