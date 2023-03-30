@@ -1,10 +1,28 @@
 
 :root { 
     
+    --Pink: hsl(322, 100%, 66%);
+
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
 }
 body { 
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+a {
+    text-decoration: none;
+} 
+li { 
+    list-style: none;
+}
+img { 
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 .container { 
     margin-left: auto;
