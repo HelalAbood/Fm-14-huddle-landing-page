@@ -6,6 +6,8 @@
     --Very-Pale-Cyan: hsl(193, 100%, 96%);
     --Very-Dark-Cyan: hsl(192, 100%, 9%);
     --Grayish-Blue: hsl(208, 11%, 55%);
+
+    --shadow-color: rgba(106, 105, 105, 0.46);
 }
 body { 
     margin: 0;
@@ -44,4 +46,45 @@ img {
     .container { 
         width: 1170px;
     }
+}
+header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+header .container { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header img { 
+    width: 200px;
+}
+header button {
+    cursor: pointer;
+    background-color: white;
+    padding: 12px 60px;
+    font-size: 18px;
+    border-radius: 30px;
+    font-weight: 700;
+    border: none;
+    box-shadow: -1px 8px 27px 0px var(--shadow-color);
+}
+@media (max-width: 767px) { 
+    header img { 
+        width: 100px;
+    }
+}
+@media (max-width: 767px) { 
+    header button {
+        padding: 6px 20px;
+        font-size: 11px;
+    }
+}
+main { 
+    background-image: url(../imgs/bg-hero-desktop.svg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #8fd1e02a;
+
 }
