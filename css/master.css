@@ -8,6 +8,7 @@
     --Grayish-Blue: hsl(208, 11%, 55%);
 
     --shadow-color: rgba(106, 105, 105, 0.46);
+    --background-img: #abe7f417;
 }
 body { 
     margin: 0;
@@ -82,9 +83,73 @@ header button {
 }
 main { 
     background-image: url(../imgs/bg-hero-desktop.svg);
-    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #8fd1e02a;
+    background-color: var(--background-img);
+}
+@media (max-width: 767px) {
+    main { 
+        background-image: url(../imgs/bg-hero-mobile.svg);
+    }
+}
+main section { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (max-width: 767px) { 
+    main section { 
+        flex-direction: column;
+        text-align: center;
+    }
+}
+main section .holder { 
+    margin-top: -100px;
+}
+@media (max-width: 767px) {
+    main section .holder { 
+        padding: 30px 0px;
+        margin-top: 0px;
+    }
+}
 
+h1 { 
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+}
+@media (max-width: 767px){
+    h1 { 
+        font-size: 30px;
+    }
+}
+p { 
+    max-width: 455px;
+    line-height: 1.6;
+}
+@media (max-width: 767px) { 
+    p { 
+        width: 305px;
+    }
+}
+main section .holder p { 
+    margin-bottom: 30px;
+}
+
+button.hover { 
+    background-color: var(--Pink);
+    border: none;
+    padding: 15px 60px;
+    border-radius: 30px;
+    color: var(--Very-Pale-Cyan);
+    font-size: 14px;
+}
+main section img { 
+    width: 650px;
+    margin-top: 20px;
+}
+@media (max-width: 767px) { 
+    main section img { 
+        width: 325px;
+        margin: 20px auto 0;
+    }
 }
