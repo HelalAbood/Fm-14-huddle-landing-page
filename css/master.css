@@ -63,12 +63,16 @@ header img {
 header button {
     cursor: pointer;
     background-color: white;
+    color: var(--Very-Dark-Cyan);
     padding: 12px 60px;
     font-size: 18px;
     border-radius: 30px;
     font-weight: 700;
     border: none;
     box-shadow: -1px 8px 27px 0px var(--shadow-color);
+}
+header button:hover { 
+    color: var(--Grayish-Blue);
 }
 @media (max-width: 767px) { 
     header img { 
@@ -143,6 +147,10 @@ button.hover {
     border-radius: 30px;
     color: var(--Very-Pale-Cyan);
     font-size: 14px;
+    cursor: pointer;
+}
+button.hover:hover { 
+    background-color: hsla(322, 100%, 66%, 0.6);
 }
 main section img { 
     width: 650px;
