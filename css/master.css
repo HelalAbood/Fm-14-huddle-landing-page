@@ -162,3 +162,40 @@ main section img {
         margin: 20px auto 0;
     }
 }
+
+section.land {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding: 40px 40px 40px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: -1px -1px 44px -14px var(--shadow-color);
+}
+@media (max-width: 767px) { 
+    section.land { 
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
+@media (max-width: 767px) { 
+    section.land.ex { 
+        flex-direction: column;
+    }
+}
+section.land .info h2 {
+    margin-bottom: -5px;
+    color: var(--Very-Dark-Cyan);
+}
+@media (max-width: 767px) { 
+    section.land .info h2 { 
+        margin-bottom: 18px;
+    }
+}
+section.land .info p {
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+}
+section.land img { 
+    width: 400px;
+}
